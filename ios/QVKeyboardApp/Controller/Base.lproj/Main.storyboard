@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NoA-j9-AEj">
+    <device id="retina6_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sgL-ed-eGk">
+                                <rect key="frame" x="0.0" y="88" width="414" height="271"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="271" id="QTn-7T-1Nv"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="m43-d6-oEu"/>
+                                <string key="text">USB Keyboard is a keyboard app that allows you type in macOS and input into iOS through USB wire.
+
+Setup:
+1. Click [Setting] below and go to [Keyboards].
+2. Make sure [USB Keyboard] and [Allow Full Access] are turned on.
+
+Usage:
+1. Connect iPhone to Mac through USB wire.
+2. Open USB Keyboard in iOS app where you want to type.
+3. Open macOS client app [USB Keyboad].
+
+&gt; &gt; &gt; Enjoy typing :)  &lt; &lt; &lt;
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GXR-Cr-kUe">
+                                <rect key="frame" x="0.0" y="371" width="414" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="dBv-a3-wKU"/>
+                                </constraints>
+                                <state key="normal" title="Setting">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="settingButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZGb-JO-wHI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="opf-ES-ZkH">
+                                <rect key="frame" x="0.0" y="419" width="414" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Jr1-LJ-XY7"/>
+                                </constraints>
+                                <state key="normal" title="Download macOS Client">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="downloadButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E9Y-HC-bRb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ps4-Vf-vGo">
+                                <rect key="frame" x="0.0" y="467" width="414" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.50898389389999998" blue="0.142551594" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="RM5-Cf-dOj"/>
+                                </constraints>
+                                <state key="normal" title="About">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="aboutButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HQ5-i6-wPu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="opf-ES-ZkH" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="5Fd-v3-KQd"/>
+                            <constraint firstItem="GXR-Cr-kUe" firstAttribute="top" secondItem="sgL-ed-eGk" secondAttribute="bottom" constant="12" id="AvF-YE-PbE"/>
+                            <constraint firstItem="opf-ES-ZkH" firstAttribute="top" secondItem="GXR-Cr-kUe" secondAttribute="bottom" constant="8" id="Lf6-3g-7Tm"/>
+                            <constraint firstItem="sgL-ed-eGk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Uqb-68-j2w"/>
+                            <constraint firstItem="Ps4-Vf-vGo" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="WF6-uD-TCR"/>
+                            <constraint firstItem="sgL-ed-eGk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Wyj-2y-ecu"/>
+                            <constraint firstItem="GXR-Cr-kUe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XSQ-bl-p3K"/>
+                            <constraint firstItem="Ps4-Vf-vGo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bTV-ei-4B0"/>
+                            <constraint firstItem="opf-ES-ZkH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hJL-Xz-Tqf"/>
+                            <constraint firstItem="GXR-Cr-kUe" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hRq-m7-RiP"/>
+                            <constraint firstItem="Ps4-Vf-vGo" firstAttribute="top" secondItem="opf-ES-ZkH" secondAttribute="bottom" constant="8" id="hy7-A7-W1V"/>
+                            <constraint firstItem="sgL-ed-eGk" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="lH3-kx-WoO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Fge-gn-ilz"/>
+                    <connections>
+                        <outlet property="textView" destination="sgL-ed-eGk" id="fqu-4m-qgg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1072.8" y="133.5832083958021"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kbg-KQ-Ug8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NoA-j9-AEj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2uS-8f-qUu">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="yrw-3F-pjb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MVy-4T-ht6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>

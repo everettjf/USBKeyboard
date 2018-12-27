@@ -1,0 +1,449 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3180A695EA226E4DC0853C4D /* libPods-QVKeyboardClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C57BBEB131EF45DDF3C2E9 /* libPods-QVKeyboardClient.a */; };
+		D11AD42D217398CD00E80597 /* QVClientManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D11AD42C217398CD00E80597 /* QVClientManager.m */; };
+		D1442C37216F946500FE4A38 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D1442C36216F946500FE4A38 /* AppDelegate.m */; };
+		D1442C39216F946600FE4A38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1442C38216F946600FE4A38 /* Assets.xcassets */; };
+		D1442C3C216F946600FE4A38 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1442C3A216F946600FE4A38 /* MainMenu.xib */; };
+		D1442C3F216F946600FE4A38 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D1442C3E216F946600FE4A38 /* main.m */; };
+		D1FA32E721764AE80038DABF /* PTUSBHub.m in Sources */ = {isa = PBXBuildFile; fileRef = D1FA32E121764AE80038DABF /* PTUSBHub.m */; };
+		D1FA32E821764AE80038DABF /* PTProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = D1FA32E221764AE80038DABF /* PTProtocol.m */; };
+		D1FA32E921764AE80038DABF /* PTChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = D1FA32E321764AE80038DABF /* PTChannel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		05C57BBEB131EF45DDF3C2E9 /* libPods-QVKeyboardClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QVKeyboardClient.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		32BF9B370447EDA92B0E738A /* Pods-QVKeyboardClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QVKeyboardClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QVKeyboardClient/Pods-QVKeyboardClient.debug.xcconfig"; sourceTree = "<group>"; };
+		D11AD42B217398CD00E80597 /* QVClientManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QVClientManager.h; sourceTree = "<group>"; };
+		D11AD42C217398CD00E80597 /* QVClientManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QVClientManager.m; sourceTree = "<group>"; };
+		D1442C32216F946500FE4A38 /* USB Keyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "USB Keyboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1442C35216F946500FE4A38 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D1442C36216F946500FE4A38 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D1442C38216F946600FE4A38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D1442C3B216F946600FE4A38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		D1442C3D216F946600FE4A38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1442C3E216F946600FE4A38 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D1442C40216F946600FE4A38 /* QVKeyboardClient.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QVKeyboardClient.entitlements; sourceTree = "<group>"; };
+		D1FA32DF21764AE80038DABF /* PTMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTMessage.h; sourceTree = "<group>"; };
+		D1FA32E121764AE80038DABF /* PTUSBHub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTUSBHub.m; sourceTree = "<group>"; };
+		D1FA32E221764AE80038DABF /* PTProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTProtocol.m; sourceTree = "<group>"; };
+		D1FA32E321764AE80038DABF /* PTChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTChannel.m; sourceTree = "<group>"; };
+		D1FA32E421764AE80038DABF /* PTProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTProtocol.h; sourceTree = "<group>"; };
+		D1FA32E521764AE80038DABF /* PTUSBHub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTUSBHub.h; sourceTree = "<group>"; };
+		D1FA32E621764AE80038DABF /* PTChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTChannel.h; sourceTree = "<group>"; };
+		EA05B048122454AF7F3184AA /* Pods-QVKeyboardClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QVKeyboardClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-QVKeyboardClient/Pods-QVKeyboardClient.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D1442C2F216F946500FE4A38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3180A695EA226E4DC0853C4D /* libPods-QVKeyboardClient.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		40733871F40383B65089083C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05C57BBEB131EF45DDF3C2E9 /* libPods-QVKeyboardClient.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B681678FA2F20C3F3B41BA27 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				32BF9B370447EDA92B0E738A /* Pods-QVKeyboardClient.debug.xcconfig */,
+				EA05B048122454AF7F3184AA /* Pods-QVKeyboardClient.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D1442C29216F946500FE4A38 = {
+			isa = PBXGroup;
+			children = (
+				D1FA32DD21764AE80038DABF /* proto */,
+				D1442C34216F946500FE4A38 /* QVKeyboardClient */,
+				D1442C33216F946500FE4A38 /* Products */,
+				B681678FA2F20C3F3B41BA27 /* Pods */,
+				40733871F40383B65089083C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D1442C33216F946500FE4A38 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D1442C32216F946500FE4A38 /* USB Keyboard.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D1442C34216F946500FE4A38 /* QVKeyboardClient */ = {
+			isa = PBXGroup;
+			children = (
+				D1442C35216F946500FE4A38 /* AppDelegate.h */,
+				D1442C36216F946500FE4A38 /* AppDelegate.m */,
+				D1442C38216F946600FE4A38 /* Assets.xcassets */,
+				D1442C3A216F946600FE4A38 /* MainMenu.xib */,
+				D1442C3D216F946600FE4A38 /* Info.plist */,
+				D1442C3E216F946600FE4A38 /* main.m */,
+				D1442C40216F946600FE4A38 /* QVKeyboardClient.entitlements */,
+				D11AD42B217398CD00E80597 /* QVClientManager.h */,
+				D11AD42C217398CD00E80597 /* QVClientManager.m */,
+			);
+			path = QVKeyboardClient;
+			sourceTree = "<group>";
+		};
+		D1FA32DD21764AE80038DABF /* proto */ = {
+			isa = PBXGroup;
+			children = (
+				D1FA32DE21764AE80038DABF /* message */,
+				D1FA32E021764AE80038DABF /* peertalk */,
+			);
+			path = proto;
+			sourceTree = "<group>";
+		};
+		D1FA32DE21764AE80038DABF /* message */ = {
+			isa = PBXGroup;
+			children = (
+				D1FA32DF21764AE80038DABF /* PTMessage.h */,
+			);
+			path = message;
+			sourceTree = "<group>";
+		};
+		D1FA32E021764AE80038DABF /* peertalk */ = {
+			isa = PBXGroup;
+			children = (
+				D1FA32E121764AE80038DABF /* PTUSBHub.m */,
+				D1FA32E221764AE80038DABF /* PTProtocol.m */,
+				D1FA32E321764AE80038DABF /* PTChannel.m */,
+				D1FA32E421764AE80038DABF /* PTProtocol.h */,
+				D1FA32E521764AE80038DABF /* PTUSBHub.h */,
+				D1FA32E621764AE80038DABF /* PTChannel.h */,
+			);
+			path = peertalk;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D1442C31216F946500FE4A38 /* QVKeyboardClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1442C43216F946600FE4A38 /* Build configuration list for PBXNativeTarget "QVKeyboardClient" */;
+			buildPhases = (
+				731A3B1FA13B527BE2A2E3A2 /* [CP] Check Pods Manifest.lock */,
+				D1442C2E216F946500FE4A38 /* Sources */,
+				D1442C2F216F946500FE4A38 /* Frameworks */,
+				D1442C30216F946500FE4A38 /* Resources */,
+				AB7DFA5DF30A687880EE021E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QVKeyboardClient;
+			productName = QVKeyboardClient;
+			productReference = D1442C32216F946500FE4A38 /* USB Keyboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D1442C2A216F946500FE4A38 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = everettjf;
+				TargetAttributes = {
+					D1442C31216F946500FE4A38 = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = D1442C2D216F946500FE4A38 /* Build configuration list for PBXProject "QVKeyboardClient" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D1442C29216F946500FE4A38;
+			productRefGroup = D1442C33216F946500FE4A38 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D1442C31216F946500FE4A38 /* QVKeyboardClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D1442C30216F946500FE4A38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1442C39216F946600FE4A38 /* Assets.xcassets in Resources */,
+				D1442C3C216F946600FE4A38 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		731A3B1FA13B527BE2A2E3A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QVKeyboardClient-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB7DFA5DF30A687880EE021E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-QVKeyboardClient/Pods-QVKeyboardClient-frameworks.sh",
+				"${PODS_ROOT}/Sparkle/Sparkle.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Sparkle.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QVKeyboardClient/Pods-QVKeyboardClient-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D1442C2E216F946500FE4A38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1442C3F216F946600FE4A38 /* main.m in Sources */,
+				D1FA32E921764AE80038DABF /* PTChannel.m in Sources */,
+				D11AD42D217398CD00E80597 /* QVClientManager.m in Sources */,
+				D1FA32E721764AE80038DABF /* PTUSBHub.m in Sources */,
+				D1442C37216F946500FE4A38 /* AppDelegate.m in Sources */,
+				D1FA32E821764AE80038DABF /* PTProtocol.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D1442C3A216F946600FE4A38 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D1442C3B216F946600FE4A38 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D1442C41216F946600FE4A38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D1442C42216F946600FE4A38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D1442C44216F946600FE4A38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32BF9B370447EDA92B0E738A /* Pods-QVKeyboardClient.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = YPV49M8592;
+				INFOPLIST_FILE = QVKeyboardClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.everettjf.qvkeyboardclient;
+				PRODUCT_NAME = "USB Keyboard";
+			};
+			name = Debug;
+		};
+		D1442C45216F946600FE4A38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA05B048122454AF7F3184AA /* Pods-QVKeyboardClient.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = YPV49M8592;
+				INFOPLIST_FILE = QVKeyboardClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.everettjf.qvkeyboardclient;
+				PRODUCT_NAME = "USB Keyboard";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D1442C2D216F946500FE4A38 /* Build configuration list for PBXProject "QVKeyboardClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1442C41216F946600FE4A38 /* Debug */,
+				D1442C42216F946600FE4A38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1442C43216F946600FE4A38 /* Build configuration list for PBXNativeTarget "QVKeyboardClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1442C44216F946600FE4A38 /* Debug */,
+				D1442C45216F946600FE4A38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D1442C2A216F946500FE4A38 /* Project object */;
+}

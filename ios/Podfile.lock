@@ -1,0 +1,20 @@
+PODS:
+  - Masonry (1.1.0)
+  - Toast (4.0.0)
+
+DEPENDENCIES:
+  - Masonry
+  - Toast
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Masonry
+    - Toast
+
+SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
+
+PODFILE CHECKSUM: ec4c13c90ee555aec962c196010c5f5aa1c061d3
+
+COCOAPODS: 1.5.3
