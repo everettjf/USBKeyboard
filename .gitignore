@@ -6,6 +6,6 @@ macos/QVKeyboardClient.xcodeproj/xcuserdata/
 macos/QVKeyboardClient.xcworkspace/xcuserdata/
 ios/QVKeyboardApp.xcworkspace/xcuserdata/
 .vscode/
-ios/proto/
-macos/proto/
+ios/proto
+macos/proto
 
