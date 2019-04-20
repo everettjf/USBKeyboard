@@ -1,0 +1,884 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03C3B04808248CC6C21AFBC042629E6E /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3690E477D6CAD520FA5381BD763386 /* UIView+Toast.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		100DCBFE39E91CF7A296FABFAB4D7CC6 /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 10BA0AD61842C56206910DCBE7FD00E9 /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		13635B78121B99E5C03C92506A161607 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = C96AEAEDA2FC486EFB6A207B3FF7DB52 /* MASViewAttribute.m */; };
+		214DF0B6664033C87D6B846599FB477A /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 43EF5662D9958AE20B7ECADC7B448A16 /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2DBB74B8B5DDB1F621433DD12BF35102 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9FD2C2E43A9B4794DD58035F1694F1 /* MASViewConstraint.m */; };
+		3E8E6916C563B9CB12AA417275FC6EB3 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EE959FB04304E8EEDDF62E49B4EE80 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		422866324CFDBBB769B71937E0B236CD /* Toast-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 31CB61607780FACA5D0ACA9980F41F18 /* Toast-dummy.m */; };
+		46B538AFD3B41E0E9E53F78C76D65AA9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C7A160ABE5DAC85DC33E762CF55AE1 /* Foundation.framework */; };
+		523F69012549DCADB26D11EFB6593B5B /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = BA3D86E13F51730F4B2AB5E6071FC850 /* Masonry.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5EBFADB0ACACA114B98082EBD8FDA650 /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 55BA33F3A329CFDF8F1DB11F3562A75F /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		61CCEA01CBE8EFFA5515E7A0D8635AAE /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = C9417A73B3D091D2C1346A224D057FD0 /* MASCompositeConstraint.m */; };
+		68F98758BA84B8EC3472A8C6FD646D16 /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 455DBC47476A42102C84B2E02357BF69 /* Masonry-dummy.m */; };
+		6FBEF9BEF976F73220F5EA0246FA6674 /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = C4CC8318C7C6F12A06C12EBDA7A57DA8 /* MASConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7AC0D0965486ED43C064F1BC177ACBC9 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = BC96DE907AC64FFBBE68D4D28EA5BB74 /* MASUtilities.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7BDDE51AF16FA53A09506EDB91E1C3C2 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B1A5B2E9946A7CAB8FF6903D4A84ED /* NSArray+MASAdditions.m */; };
+		7E56D8A6659E7680AE64C2E16F37E710 /* Toast.h in Headers */ = {isa = PBXBuildFile; fileRef = 13E8A60C53AA28ACE2E988218B12F48D /* Toast.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		801A6085774E51940CBB3B239985FCEF /* Pods-QVKeyboard-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B32C94320D964D551FFD02883A84A871 /* Pods-QVKeyboard-dummy.m */; };
+		81C1291C7ABA4942277F5756671AEE37 /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 394CBF5D5258AFEAE8DBDA3A87BD1919 /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		86B2DF4CC6E598AAA73D0CC6EEBA0E96 /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = A3AB50B9F0E28B5E7E82D3FF0B1292BF /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		89450A58FD91E5B227171FC75160E4EA /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C42E6D52892C42431C3A301F231EED /* MASConstraint.m */; };
+		90587FBC707A2DC675F93CB70DB02284 /* UIView+Toast.h in Headers */ = {isa = PBXBuildFile; fileRef = 914D3CEB356EB52E55035C45C75E5170 /* UIView+Toast.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		92711327ED7920702A69A828271279AE /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = DA6A5BE6EF28A04FA155F9FF9981C40A /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		955BE39896CA35F2A585DC3309E5FDA5 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = F62DB83213284D42DB6930BF182E08D3 /* MASLayoutConstraint.m */; };
+		9AB27A7F752AB644728D50B0228A070E /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = A288E7149947AEFFDE5C11BDB70DB014 /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9BFAE06AC2F3B426C64EEDBF8C99A69E /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = FA62176FCD74E7455BE39B1503A07B1A /* NSArray+MASAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A1FA046FDFC42676D17FEC387B10D24A /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F14A1D113B06BF178CF772E915D97446 /* View+MASAdditions.m */; };
+		B5EC5518E18B05A5334C49ABBF4C78F7 /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 18D8B6A102C9E476ED82E3A86E6FBCC1 /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C2058912B8AE94949510BE900CBF1F37 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6E839864EE09C8CE0528DE01FD9241A /* QuartzCore.framework */; };
+		C6E83C10646E2DF6C83A578CE6AF0E5A /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E3818D3684216C76165D25C317F20CD /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D44A3264927FC4D4C7029C31A5BDC238 /* Pods-QVKeyboardApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C12AC3DE9888CF7F6774E2779705DA8 /* Pods-QVKeyboardApp-dummy.m */; };
+		D7CE05A743B7ACD50796191FA442814C /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C3E03537B695ABB1B6BD014B79604CC /* ViewController+MASAdditions.m */; };
+		DF7F88B58B564EDF169EC0C9CF8E5124 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = C63EBD121EB92D06B6459FA1207B9374 /* MASConstraintMaker.m */; };
+		F861D2DADCE8A8F94F1DCB22EB8A6CE2 /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 32D75D4AD794D69849E39EB2B57AF42B /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FB2D6684809FC69FE060B456E307F0D8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E826AE0196CB3540E72242664FBD3F32 /* UIKit.framework */; };
+		FB415F79751F1A1F2203183C3CEE0723 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 64AB13EA083034926848BDCEA4D5C464 /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5D8A33D980C8564DA8E4D6D2E035020A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9DC8D9E02903E93BD0B2FEC9D846EA20;
+			remoteInfo = Masonry;
+		};
+		67B64F6399BA012B0316DA5FC500F6AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 736FA7C04D7C43DBA328A691F3424282;
+			remoteInfo = Toast;
+		};
+		EECA9169EFD2926D62B338DA00DAF3DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9DC8D9E02903E93BD0B2FEC9D846EA20;
+			remoteInfo = Masonry;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C3E03537B695ABB1B6BD014B79604CC /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "Masonry/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		10BA0AD61842C56206910DCBE7FD00E9 /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
+		124FD0CA51B2AA4FE029F293E8DDB7C9 /* libPods-QVKeyboardApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-QVKeyboardApp.a"; path = "libPods-QVKeyboardApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13E8A60C53AA28ACE2E988218B12F48D /* Toast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Toast.h; path = "Toast-Framework/Toast.h"; sourceTree = "<group>"; };
+		18D8B6A102C9E476ED82E3A86E6FBCC1 /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
+		1C9FD2C2E43A9B4794DD58035F1694F1 /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
+		1F96E099DD27C69217203F547AA84CCC /* Toast-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toast-prefix.pch"; sourceTree = "<group>"; };
+		2640ECAD21DB598F5381CF8080BE5A8F /* Masonry.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.xcconfig; sourceTree = "<group>"; };
+		2AC658EBA596E5F487BEF67585EB0870 /* Pods-QVKeyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QVKeyboard.release.xcconfig"; sourceTree = "<group>"; };
+		31CB61607780FACA5D0ACA9980F41F18 /* Toast-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Toast-dummy.m"; sourceTree = "<group>"; };
+		32D75D4AD794D69849E39EB2B57AF42B /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
+		38B1A5B2E9946A7CAB8FF6903D4A84ED /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		394CBF5D5258AFEAE8DBDA3A87BD1919 /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
+		3CE45448F517BE1FCF7DBF618E8B9AB5 /* Pods-QVKeyboardApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QVKeyboardApp.release.xcconfig"; sourceTree = "<group>"; };
+		43EF5662D9958AE20B7ECADC7B448A16 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		455DBC47476A42102C84B2E02357BF69 /* Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Masonry-dummy.m"; sourceTree = "<group>"; };
+		4E224BDEDE786EF5E8C04FD34F6CD09C /* Pods-QVKeyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QVKeyboard.debug.xcconfig"; sourceTree = "<group>"; };
+		55BA33F3A329CFDF8F1DB11F3562A75F /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
+		64AB13EA083034926848BDCEA4D5C464 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		75EE959FB04304E8EEDDF62E49B4EE80 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		7A25799755A41BA6A00B682FAC1729EC /* Toast.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Toast.xcconfig; sourceTree = "<group>"; };
+		7C12AC3DE9888CF7F6774E2779705DA8 /* Pods-QVKeyboardApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QVKeyboardApp-dummy.m"; sourceTree = "<group>"; };
+		7E3818D3684216C76165D25C317F20CD /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
+		84E882D4C52257519FD8D339D7D8B7B9 /* Pods-QVKeyboard-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QVKeyboard-resources.sh"; sourceTree = "<group>"; };
+		879EDE27EB7C205BBB0BED9D0E7E2294 /* Pods-QVKeyboard-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QVKeyboard-acknowledgements.markdown"; sourceTree = "<group>"; };
+		89DD046E8BAF07D1D1BA591E0CAC06C8 /* Pods-QVKeyboardApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QVKeyboardApp.debug.xcconfig"; sourceTree = "<group>"; };
+		90C7A160ABE5DAC85DC33E762CF55AE1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		914D3CEB356EB52E55035C45C75E5170 /* UIView+Toast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+Toast.h"; path = "Toast/UIView+Toast.h"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A288E7149947AEFFDE5C11BDB70DB014 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
+		A3AB50B9F0E28B5E7E82D3FF0B1292BF /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		AC5E93CD1DB86D86AE8383885602624F /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
+		B32C94320D964D551FFD02883A84A871 /* Pods-QVKeyboard-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QVKeyboard-dummy.m"; sourceTree = "<group>"; };
+		BA3D86E13F51730F4B2AB5E6071FC850 /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
+		BC96DE907AC64FFBBE68D4D28EA5BB74 /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
+		C1BDBF2CACF490788A95FBBE842508E8 /* libPods-QVKeyboard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-QVKeyboard.a"; path = "libPods-QVKeyboard.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4CC8318C7C6F12A06C12EBDA7A57DA8 /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
+		C5F31247A5E13180995F608D90A95D0F /* Pods-QVKeyboard-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QVKeyboard-acknowledgements.plist"; sourceTree = "<group>"; };
+		C63EBD121EB92D06B6459FA1207B9374 /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
+		C9417A73B3D091D2C1346A224D057FD0 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
+		C96AEAEDA2FC486EFB6A207B3FF7DB52 /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
+		CEA6539F81D3872A59F5CB0C8364C753 /* libMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMasonry.a; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFFDDBA435D1CA5472260CD0220A48AB /* libToast.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libToast.a; path = libToast.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2DEFABB7321F25E73C448E45242C947 /* Pods-QVKeyboardApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QVKeyboardApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D6E839864EE09C8CE0528DE01FD9241A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		DA6A5BE6EF28A04FA155F9FF9981C40A /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		E81AD1C86EECBAB8EE9EDA7C1D22F820 /* Pods-QVKeyboardApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QVKeyboardApp-resources.sh"; sourceTree = "<group>"; };
+		E826AE0196CB3540E72242664FBD3F32 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		F057775442AD333E5B284B6DC55D9F1F /* Pods-QVKeyboardApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QVKeyboardApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		F14A1D113B06BF178CF772E915D97446 /* View+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
+		F62DB83213284D42DB6930BF182E08D3 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
+		F78DDD4825457F6FB7ED26D1CB22BE1A /* Pods-QVKeyboardApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QVKeyboardApp-frameworks.sh"; sourceTree = "<group>"; };
+		F8C42E6D52892C42431C3A301F231EED /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
+		FA62176FCD74E7455BE39B1503A07B1A /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		FE3690E477D6CAD520FA5381BD763386 /* UIView+Toast.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+Toast.m"; path = "Toast/UIView+Toast.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		077B839097A7983F09B27ACB6B87A71F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58E6F64810F8DEF58F065C3CC41205ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FD8312A1AEB348F49A81C438DB25115 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46B538AFD3B41E0E9E53F78C76D65AA9 /* Foundation.framework in Frameworks */,
+				FB2D6684809FC69FE060B456E307F0D8 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75FD652C648EC6A6849C2E54F94C5D0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2058912B8AE94949510BE900CBF1F37 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0429E6C38F84F27710F22411D2AEB6EB /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6BFF70338FF5BCCB799B13AA07577E4E /* Pods-QVKeyboard */,
+				2E3F37E1D4DDC689D55CE8F5BFE657F3 /* Pods-QVKeyboardApp */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9EBF83A17FAAD0333B507DD3E1099181 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2E3F37E1D4DDC689D55CE8F5BFE657F3 /* Pods-QVKeyboardApp */ = {
+			isa = PBXGroup;
+			children = (
+				D2DEFABB7321F25E73C448E45242C947 /* Pods-QVKeyboardApp-acknowledgements.markdown */,
+				F057775442AD333E5B284B6DC55D9F1F /* Pods-QVKeyboardApp-acknowledgements.plist */,
+				7C12AC3DE9888CF7F6774E2779705DA8 /* Pods-QVKeyboardApp-dummy.m */,
+				F78DDD4825457F6FB7ED26D1CB22BE1A /* Pods-QVKeyboardApp-frameworks.sh */,
+				E81AD1C86EECBAB8EE9EDA7C1D22F820 /* Pods-QVKeyboardApp-resources.sh */,
+				89DD046E8BAF07D1D1BA591E0CAC06C8 /* Pods-QVKeyboardApp.debug.xcconfig */,
+				3CE45448F517BE1FCF7DBF618E8B9AB5 /* Pods-QVKeyboardApp.release.xcconfig */,
+			);
+			name = "Pods-QVKeyboardApp";
+			path = "Target Support Files/Pods-QVKeyboardApp";
+			sourceTree = "<group>";
+		};
+		47E157335E513BCB917849848ED34EE8 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				32D75D4AD794D69849E39EB2B57AF42B /* MASCompositeConstraint.h */,
+				C9417A73B3D091D2C1346A224D057FD0 /* MASCompositeConstraint.m */,
+				C4CC8318C7C6F12A06C12EBDA7A57DA8 /* MASConstraint.h */,
+				F8C42E6D52892C42431C3A301F231EED /* MASConstraint.m */,
+				394CBF5D5258AFEAE8DBDA3A87BD1919 /* MASConstraint+Private.h */,
+				18D8B6A102C9E476ED82E3A86E6FBCC1 /* MASConstraintMaker.h */,
+				C63EBD121EB92D06B6459FA1207B9374 /* MASConstraintMaker.m */,
+				A288E7149947AEFFDE5C11BDB70DB014 /* MASLayoutConstraint.h */,
+				F62DB83213284D42DB6930BF182E08D3 /* MASLayoutConstraint.m */,
+				BA3D86E13F51730F4B2AB5E6071FC850 /* Masonry.h */,
+				BC96DE907AC64FFBBE68D4D28EA5BB74 /* MASUtilities.h */,
+				10BA0AD61842C56206910DCBE7FD00E9 /* MASViewAttribute.h */,
+				C96AEAEDA2FC486EFB6A207B3FF7DB52 /* MASViewAttribute.m */,
+				55BA33F3A329CFDF8F1DB11F3562A75F /* MASViewConstraint.h */,
+				1C9FD2C2E43A9B4794DD58035F1694F1 /* MASViewConstraint.m */,
+				FA62176FCD74E7455BE39B1503A07B1A /* NSArray+MASAdditions.h */,
+				38B1A5B2E9946A7CAB8FF6903D4A84ED /* NSArray+MASAdditions.m */,
+				64AB13EA083034926848BDCEA4D5C464 /* NSArray+MASShorthandAdditions.h */,
+				43EF5662D9958AE20B7ECADC7B448A16 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				75EE959FB04304E8EEDDF62E49B4EE80 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				7E3818D3684216C76165D25C317F20CD /* View+MASAdditions.h */,
+				F14A1D113B06BF178CF772E915D97446 /* View+MASAdditions.m */,
+				DA6A5BE6EF28A04FA155F9FF9981C40A /* View+MASShorthandAdditions.h */,
+				A3AB50B9F0E28B5E7E82D3FF0B1292BF /* ViewController+MASAdditions.h */,
+				0C3E03537B695ABB1B6BD014B79604CC /* ViewController+MASAdditions.m */,
+				83BFDB4AFCB367A7488A818B4DB83294 /* Support Files */,
+			);
+			name = Masonry;
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		6BFF70338FF5BCCB799B13AA07577E4E /* Pods-QVKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				879EDE27EB7C205BBB0BED9D0E7E2294 /* Pods-QVKeyboard-acknowledgements.markdown */,
+				C5F31247A5E13180995F608D90A95D0F /* Pods-QVKeyboard-acknowledgements.plist */,
+				B32C94320D964D551FFD02883A84A871 /* Pods-QVKeyboard-dummy.m */,
+				84E882D4C52257519FD8D339D7D8B7B9 /* Pods-QVKeyboard-resources.sh */,
+				4E224BDEDE786EF5E8C04FD34F6CD09C /* Pods-QVKeyboard.debug.xcconfig */,
+				2AC658EBA596E5F487BEF67585EB0870 /* Pods-QVKeyboard.release.xcconfig */,
+			);
+			name = "Pods-QVKeyboard";
+			path = "Target Support Files/Pods-QVKeyboard";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				806BDF6E0AE374DED4FC47217D66B8CD /* Pods */,
+				D31ECAA5E57BF65423779AE89E3EAB7F /* Products */,
+				0429E6C38F84F27710F22411D2AEB6EB /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		806BDF6E0AE374DED4FC47217D66B8CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				47E157335E513BCB917849848ED34EE8 /* Masonry */,
+				AD5BD242CCF456DA7517E7638FA913BF /* Toast */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		83BFDB4AFCB367A7488A818B4DB83294 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2640ECAD21DB598F5381CF8080BE5A8F /* Masonry.xcconfig */,
+				455DBC47476A42102C84B2E02357BF69 /* Masonry-dummy.m */,
+				AC5E93CD1DB86D86AE8383885602624F /* Masonry-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Masonry";
+			sourceTree = "<group>";
+		};
+		8AE70B482FAF430C5E7182A52E401993 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7A25799755A41BA6A00B682FAC1729EC /* Toast.xcconfig */,
+				31CB61607780FACA5D0ACA9980F41F18 /* Toast-dummy.m */,
+				1F96E099DD27C69217203F547AA84CCC /* Toast-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Toast";
+			sourceTree = "<group>";
+		};
+		9EBF83A17FAAD0333B507DD3E1099181 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				90C7A160ABE5DAC85DC33E762CF55AE1 /* Foundation.framework */,
+				D6E839864EE09C8CE0528DE01FD9241A /* QuartzCore.framework */,
+				E826AE0196CB3540E72242664FBD3F32 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		AD5BD242CCF456DA7517E7638FA913BF /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				13E8A60C53AA28ACE2E988218B12F48D /* Toast.h */,
+				914D3CEB356EB52E55035C45C75E5170 /* UIView+Toast.h */,
+				FE3690E477D6CAD520FA5381BD763386 /* UIView+Toast.m */,
+				8AE70B482FAF430C5E7182A52E401993 /* Support Files */,
+			);
+			name = Toast;
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		D31ECAA5E57BF65423779AE89E3EAB7F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEA6539F81D3872A59F5CB0C8364C753 /* libMasonry.a */,
+				C1BDBF2CACF490788A95FBBE842508E8 /* libPods-QVKeyboard.a */,
+				124FD0CA51B2AA4FE029F293E8DDB7C9 /* libPods-QVKeyboardApp.a */,
+				CFFDDBA435D1CA5472260CD0220A48AB /* libToast.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0B7DEB3E3F4C77A474892C51D9C9BD3C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E56D8A6659E7680AE64C2E16F37E710 /* Toast.h in Headers */,
+				90587FBC707A2DC675F93CB70DB02284 /* UIView+Toast.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDF73468622762862D2FB76ED4AC0D8E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F861D2DADCE8A8F94F1DCB22EB8A6CE2 /* MASCompositeConstraint.h in Headers */,
+				81C1291C7ABA4942277F5756671AEE37 /* MASConstraint+Private.h in Headers */,
+				6FBEF9BEF976F73220F5EA0246FA6674 /* MASConstraint.h in Headers */,
+				B5EC5518E18B05A5334C49ABBF4C78F7 /* MASConstraintMaker.h in Headers */,
+				9AB27A7F752AB644728D50B0228A070E /* MASLayoutConstraint.h in Headers */,
+				523F69012549DCADB26D11EFB6593B5B /* Masonry.h in Headers */,
+				7AC0D0965486ED43C064F1BC177ACBC9 /* MASUtilities.h in Headers */,
+				100DCBFE39E91CF7A296FABFAB4D7CC6 /* MASViewAttribute.h in Headers */,
+				5EBFADB0ACACA114B98082EBD8FDA650 /* MASViewConstraint.h in Headers */,
+				9BFAE06AC2F3B426C64EEDBF8C99A69E /* NSArray+MASAdditions.h in Headers */,
+				FB415F79751F1A1F2203183C3CEE0723 /* NSArray+MASShorthandAdditions.h in Headers */,
+				214DF0B6664033C87D6B846599FB477A /* NSLayoutConstraint+MASDebugAdditions.h in Headers */,
+				C6E83C10646E2DF6C83A578CE6AF0E5A /* View+MASAdditions.h in Headers */,
+				92711327ED7920702A69A828271279AE /* View+MASShorthandAdditions.h in Headers */,
+				86B2DF4CC6E598AAA73D0CC6EEBA0E96 /* ViewController+MASAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2B8B5155F23BD5CB0E2E2BF19BDC9EF5 /* Pods-QVKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59B1AC9E1EBB32A1CA87A21B64B5503D /* Build configuration list for PBXNativeTarget "Pods-QVKeyboard" */;
+			buildPhases = (
+				505FBA6720C9945E24E69FBE44F6748C /* Sources */,
+				58E6F64810F8DEF58F065C3CC41205ED /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				982CFEA0B153D3F98E915C6F0D712FB4 /* PBXTargetDependency */,
+			);
+			name = "Pods-QVKeyboard";
+			productName = "Pods-QVKeyboard";
+			productReference = C1BDBF2CACF490788A95FBBE842508E8 /* libPods-QVKeyboard.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		4ED05D87C17FC90E9371DB26D1037F0E /* Pods-QVKeyboardApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B64868C1C2477E94FD592F8CBE78ED0 /* Build configuration list for PBXNativeTarget "Pods-QVKeyboardApp" */;
+			buildPhases = (
+				078C1495015DB37DB0B815136693BC68 /* Sources */,
+				077B839097A7983F09B27ACB6B87A71F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C2517D1E13A95282DEE2F5046AB9B96 /* PBXTargetDependency */,
+				25FB785BAE9453103C84393661FC1F95 /* PBXTargetDependency */,
+			);
+			name = "Pods-QVKeyboardApp";
+			productName = "Pods-QVKeyboardApp";
+			productReference = 124FD0CA51B2AA4FE029F293E8DDB7C9 /* libPods-QVKeyboardApp.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		736FA7C04D7C43DBA328A691F3424282 /* Toast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80A4FB50635389805FC0CA59DD5D36BD /* Build configuration list for PBXNativeTarget "Toast" */;
+			buildPhases = (
+				4A470603A830E330AF74CA653B3378D2 /* Sources */,
+				75FD652C648EC6A6849C2E54F94C5D0D /* Frameworks */,
+				0B7DEB3E3F4C77A474892C51D9C9BD3C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Toast;
+			productName = Toast;
+			productReference = CFFDDBA435D1CA5472260CD0220A48AB /* libToast.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9DC8D9E02903E93BD0B2FEC9D846EA20 /* Masonry */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34CAE1CB89EDBF2E53735CC5D4E5E69F /* Build configuration list for PBXNativeTarget "Masonry" */;
+			buildPhases = (
+				C4BE2DC1E815E7367562323223772531 /* Sources */,
+				6FD8312A1AEB348F49A81C438DB25115 /* Frameworks */,
+				BDF73468622762862D2FB76ED4AC0D8E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Masonry;
+			productName = Masonry;
+			productReference = CEA6539F81D3872A59F5CB0C8364C753 /* libMasonry.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = D31ECAA5E57BF65423779AE89E3EAB7F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9DC8D9E02903E93BD0B2FEC9D846EA20 /* Masonry */,
+				2B8B5155F23BD5CB0E2E2BF19BDC9EF5 /* Pods-QVKeyboard */,
+				4ED05D87C17FC90E9371DB26D1037F0E /* Pods-QVKeyboardApp */,
+				736FA7C04D7C43DBA328A691F3424282 /* Toast */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		078C1495015DB37DB0B815136693BC68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D44A3264927FC4D4C7029C31A5BDC238 /* Pods-QVKeyboardApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A470603A830E330AF74CA653B3378D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				422866324CFDBBB769B71937E0B236CD /* Toast-dummy.m in Sources */,
+				03C3B04808248CC6C21AFBC042629E6E /* UIView+Toast.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		505FBA6720C9945E24E69FBE44F6748C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				801A6085774E51940CBB3B239985FCEF /* Pods-QVKeyboard-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4BE2DC1E815E7367562323223772531 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61CCEA01CBE8EFFA5515E7A0D8635AAE /* MASCompositeConstraint.m in Sources */,
+				89450A58FD91E5B227171FC75160E4EA /* MASConstraint.m in Sources */,
+				DF7F88B58B564EDF169EC0C9CF8E5124 /* MASConstraintMaker.m in Sources */,
+				955BE39896CA35F2A585DC3309E5FDA5 /* MASLayoutConstraint.m in Sources */,
+				68F98758BA84B8EC3472A8C6FD646D16 /* Masonry-dummy.m in Sources */,
+				13635B78121B99E5C03C92506A161607 /* MASViewAttribute.m in Sources */,
+				2DBB74B8B5DDB1F621433DD12BF35102 /* MASViewConstraint.m in Sources */,
+				7BDDE51AF16FA53A09506EDB91E1C3C2 /* NSArray+MASAdditions.m in Sources */,
+				3E8E6916C563B9CB12AA417275FC6EB3 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				A1FA046FDFC42676D17FEC387B10D24A /* View+MASAdditions.m in Sources */,
+				D7CE05A743B7ACD50796191FA442814C /* ViewController+MASAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		25FB785BAE9453103C84393661FC1F95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Toast;
+			target = 736FA7C04D7C43DBA328A691F3424282 /* Toast */;
+			targetProxy = 67B64F6399BA012B0316DA5FC500F6AB /* PBXContainerItemProxy */;
+		};
+		8C2517D1E13A95282DEE2F5046AB9B96 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Masonry;
+			target = 9DC8D9E02903E93BD0B2FEC9D846EA20 /* Masonry */;
+			targetProxy = 5D8A33D980C8564DA8E4D6D2E035020A /* PBXContainerItemProxy */;
+		};
+		982CFEA0B153D3F98E915C6F0D712FB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Masonry;
+			target = 9DC8D9E02903E93BD0B2FEC9D846EA20 /* Masonry */;
+			targetProxy = EECA9169EFD2926D62B338DA00DAF3DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		01EAA1CF3439020BB36D06E9F591AD47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2640ECAD21DB598F5381CF8080BE5A8F /* Masonry.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Masonry;
+				PRODUCT_NAME = Masonry;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04CA07C778D8E556885C03EB26330CBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E224BDEDE786EF5E8C04FD34F6CD09C /* Pods-QVKeyboard.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		553022A828EE1991F07D2D73F565AEF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		58CE816B060A41D32CEC095441D0E3E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		5F9D22A6EC612131859B88BB1772D95E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A25799755A41BA6A00B682FAC1729EC /* Toast.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Toast/Toast-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Toast;
+				PRODUCT_NAME = Toast;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		777EC54EF26F3B5E4720A64E26961910 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A25799755A41BA6A00B682FAC1729EC /* Toast.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Toast/Toast-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Toast;
+				PRODUCT_NAME = Toast;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8EDF2D95B0C5F54659AD9065A1361B4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2640ECAD21DB598F5381CF8080BE5A8F /* Masonry.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Masonry;
+				PRODUCT_NAME = Masonry;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9B927CBA6CAB173FF16AB9598A8CB4E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CE45448F517BE1FCF7DBF618E8B9AB5 /* Pods-QVKeyboardApp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B64BE2978661E3F6F120DE0F1C4DD9E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89DD046E8BAF07D1D1BA591E0CAC06C8 /* Pods-QVKeyboardApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C4E379949CF337561EA34CF799D855D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AC658EBA596E5F487BEF67585EB0870 /* Pods-QVKeyboard.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				553022A828EE1991F07D2D73F565AEF8 /* Debug */,
+				58CE816B060A41D32CEC095441D0E3E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34CAE1CB89EDBF2E53735CC5D4E5E69F /* Build configuration list for PBXNativeTarget "Masonry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EDF2D95B0C5F54659AD9065A1361B4A /* Debug */,
+				01EAA1CF3439020BB36D06E9F591AD47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59B1AC9E1EBB32A1CA87A21B64B5503D /* Build configuration list for PBXNativeTarget "Pods-QVKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04CA07C778D8E556885C03EB26330CBB /* Debug */,
+				C4E379949CF337561EA34CF799D855D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80A4FB50635389805FC0CA59DD5D36BD /* Build configuration list for PBXNativeTarget "Toast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				777EC54EF26F3B5E4720A64E26961910 /* Debug */,
+				5F9D22A6EC612131859B88BB1772D95E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B64868C1C2477E94FD592F8CBE78ED0 /* Build configuration list for PBXNativeTarget "Pods-QVKeyboardApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B64BE2978661E3F6F120DE0F1C4DD9E2 /* Debug */,
+				9B927CBA6CAB173FF16AB9598A8CB4E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
